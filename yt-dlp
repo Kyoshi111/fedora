@@ -1,0 +1,3 @@
+yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w" -o "%(title)s.%(ext)s" "YOUTUBE-LINK"
+
+yt-dlp -f "wv+ba/wv" -x --audio-format mp3 -o "%(title)s.%(ext)s" "YOUTUBE-LINK"

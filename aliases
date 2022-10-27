@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo 'alias dnf="sudo dnf"' >> .bashrc
+echo 'alias l="lsd -la"' >> .bashrc
+echo 'alias dnf="sudo dnf"' >> .bashrc
+echo 'alias in="dnf in"' >> .bashrc
+echo 'alias se="dnf se"' >> .bashrc
+echo 'alias re="dnf remove"' >> .bashrc
+echo 'alias up="dnf up"' >> .bashrc
+echo 'alias cup="dnf check-update"' >> .bashrc
+echo 'alias cupr="cup --refresh"' >> .bashrc
+
+echo 'alias fin="flatpak install"' >> .bashrc
+echo 'alias fse="flatpak search"' >> .bashrc
+echo 'alias fre="flatpak remove"' >> .bashrc
+echo 'alias fup="flatpak update"' >> .bashrc
