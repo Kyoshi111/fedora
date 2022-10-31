@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo dnf remove -y firefox 'libreoffice*' gnome-characters cheese gnome-connections gnome-contacts simple-scan mediawriter gnome-tour
-sudo dnf install -y neovim neofetch lsd bat libgda libgda-sqlite openssl timeshift gnome-tweaks steam virt-manager code gparted mono-devel mono-complete referenceassemblies-pcl
+sudo dnf remove -y firefox 'libreoffice*' gnome-characters cheese gnome-connections gnome-contacts simple-scan mediawriter gnome-tour gnome-maps gnome-photos totem
+sudo dnf install -y neovim neofetch lsd bat libgda libgda-sqlite openssl timeshift gnome-tweaks steam virt-manager code gparted mono-devel mono-complete sshfs

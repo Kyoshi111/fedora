@@ -1,4 +1,4 @@
 #!/bin/bash
 
-flatpak install -y flathub com.google.Chrome com.mattjakeman.ExtensionManager org.telegram.desktop org.onlyoffice.desktopeditors org.kde.krita org.inkscape.Inkscape org.kde.kdenlive com.obsproject.Studio com.discordapp.Discord com.github.libresprite.LibreSprite org.qbittorrent.qBittorrent com.ultimaker.cura us.zoom.Zoom org.videolan.VLC com.unity.UnityHub io.bassi.Amberol
+flatpak install -y flathub com.google.Chrome com.mattjakeman.ExtensionManager org.telegram.desktop org.onlyoffice.desktopeditors org.kde.krita org.inkscape.Inkscape org.kde.kdenlive com.obsproject.Studio com.discordapp.Discord com.github.libresprite.LibreSprite org.qbittorrent.qBittorrent com.ultimaker.cura us.zoom.Zoom org.videolan.VLC com.unity.UnityHub
 

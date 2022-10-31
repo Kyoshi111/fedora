@@ -11,9 +11,9 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
 # Mono
-rpm --import "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
-su -c 'curl https://download.mono-project.com/repo/centos8-preview.repo | tee /etc/yum.repos.d/mono-centos8-preview.repo'
+sudo rpm --import "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
+sudo curl https://download.mono-project.com/repo/centos8-preview.repo | tee /etc/yum.repos.d/mono-centos8-preview.repo
 
-sudo dnf autoremove
+sudo dnf autoremove -y
 sudo dnf clean all
-sudo dnf update --refresh
+sudo dnf update --refresh -y

@@ -1,2 +1,2 @@
 #!/bin/bash
-sshfs kappa:/home/02/yushkov /home/kyoshi/Kappa
+sshfs kappa:/home/02/yushkov /home/kyoshi/kappa
