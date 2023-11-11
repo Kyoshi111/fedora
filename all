@@ -21,5 +21,7 @@ sudo dnf upgrade --refresh
 echo 'Alphabetical App Grid\nApplndicator and KStatusNotifierltem Support\nBlur my Shell\nDisable unredirect fullscreen windows\nGnome 4x Ul Improvements\nGSConnect\nMaximize To Empty Workspace\nMaximizeToEmptyWorkspace-extension\nPano - Clipboard Manager\nQuick Settings Audio Panel\nStatus Area Horizontal Spacing\nSyncthing Indicator'
 flatpak run com.mattjakeman.ExtensionManager
 
+# zsh
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 cp .zshrc ~/
 chsh -s $(which zsh) $USER
