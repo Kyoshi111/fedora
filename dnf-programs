@@ -1,4 +1,9 @@
 #!/bin/bash
 
 sudo dnf remove -y firefox 'libreoffice*' gnome-characters cheese gnome-connections gnome-contacts simple-scan mediawriter gnome-tour gnome-maps gnome-photos totem
-sudo dnf install -y neovim neofetch lsd bat libgda libgda-sqlite openssl timeshift gnome-tweaks steam virt-manager code gparted mono-devel mono-complete sshfs
+sudo dnf install -y neovim neofetch lsd bat libgda libgda-sqlite openssl timeshift gnome-tweaks steam-devices virt-manager code gparted sshfs keepassxc unityhub syncthing papirus-icon-theme zsh util-linux-user samba samba-client 
+
+# Codeks
+sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf install -y lame\* --exclude=lame-devel
+sudo dnf group upgrade -y --with-optional Multimedia

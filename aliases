@@ -1,16 +1,20 @@
 #!/bin/bash
 
-echo 'alias dnf="sudo dnf"' >> .bashrc
-echo 'alias l="lsd -la"' >> .bashrc
-echo 'alias dnf="sudo dnf"' >> .bashrc
-echo 'alias in="dnf in"' >> .bashrc
-echo 'alias se="dnf se"' >> .bashrc
-echo 'alias re="dnf remove"' >> .bashrc
-echo 'alias up="dnf up"' >> .bashrc
-echo 'alias cup="dnf check-update"' >> .bashrc
-echo 'alias cupr="cup --refresh"' >> .bashrc
-
-echo 'alias fin="flatpak install"' >> .bashrc
-echo 'alias fse="flatpak search"' >> .bashrc
-echo 'alias fre="flatpak remove"' >> .bashrc
-echo 'alias fup="flatpak update"' >> .bashrc
+echo "alias fup='flatpak update'" >> .bashrc
+echo "alias fin='flatpak install'" >> .bashrc
+echo "alias fre='flatpak remove'" >> .bashrc
+echo "alias fse='flatpak search'" >> .bashrc
+echo "alias ffl='flatfolder'" >> .bashrc
+echo "alias fcl='flatpak remove --unused' && flatpak remove --delete-data" >> .bashrc
+echo "alias dup='sudo dnf update'" >> .bashrc
+echo "alias din='sudo dnf install'" >> .bashrc
+echo "alias dre='sudo dnf remove'" >> .bashrc
+echo "alias drein='sudo dnf reinstall'" >> .bashrc
+echo "alias dse='sudo dnf search'" >> .bashrc
+echo "alias dcl='sudo dnf autoremove'" >> .bashrc
+echo "alias up='dup && fup'" >> .bashrc
+echo "alias upy='dup -y && fup -y'" >> .bashrc
+echo "alias cl='dcl && fcl && ffl'" >> .bashrc
+echo "alias cly='dcl -y && fcl -y && ffl'" >> .bashrc
+echo "alias upcl='dcl && dup && fcl && ffl && fup' " >> .bashrc
+echo "alias upcly='dcl -y && dup -y && fcl -y && ffl && fup -y'" >> .bashrc

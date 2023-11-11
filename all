@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Fstab
+echo ',defaults,noatime,discard=async'
+sudo gnome-text-editor /etc/fstab
+
+# DNF
+./dnf-config
+sudo dnf upgrade --refresh
+./dnf-repos
+./dnf-programs
+
+# Flatpak
+./flatpak-repos
+./flatpak-programs
+
+# Installers
+./installers
+
+# Extensions
+echo 'Alphabetical App Grid\nApplndicator and KStatusNotifierltem Support\nBlur my Shell\nDisable unredirect fullscreen windows\nGnome 4x Ul Improvements\nGSConnect\nMaximize To Empty Workspace\nMaximizeToEmptyWorkspace-extension\nPano - Clipboard Manager\nQuick Settings Audio Panel\nStatus Area Horizontal Spacing\nSyncthing Indicator'
+flatpak run com.mattjakeman.ExtensionManager
+
+cp .zshrc ~/
+chsh -s $(which zsh) $USER

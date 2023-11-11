@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# balenaEtcher 1.18.11
+wget 'https://github.com/balena-io/etcher/releases/download/v1.18.11/balena-etcher-1.18.11.x86_64.rpm'
+sudo dnf install balena-etcher-1.18.11.x86_64.rpm
+
+# jetbrains-toolbox-2.1.0.18144.tar.gz
+wget 'https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.1.0.18144.tar.gz'
+tar -xzvf jetbrains-toolbox-2.1.0.18144.tar.gz
+echo 'jetbrains-toolbox-2.1.0.18144.tar.gz succsessfuly downloaded and unpacked'
